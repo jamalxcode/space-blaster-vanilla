@@ -1,73 +1,124 @@
-# Welcome to your Lovable project
+# Space Invaders - Classic Arcade Game
 
-## Project info
+A retro-style Space Invaders game built with React, TypeScript, and HTML5 Canvas. Features authentic pixel art graphics, arcade sound effects, and classic gameplay.
 
-**URL**: https://lovable.dev/projects/7c953700-a863-443c-806a-60c492b2ead5
+## 🎮 Play Now
 
-## How can I edit this code?
+Visit the live demo: [Space Invaders on Lovable](https://lovable.dev/projects/7c953700-a863-443c-806a-60c492b2ead5)
 
-There are several ways of editing your application.
+## 🕹️ How to Play
 
-**Use Lovable**
+- **Move**: Use Arrow Keys (← →) or A/D keys
+- **Fire**: Press Spacebar
+- **Start/Restart**: Press Enter
+- **Mute/Unmute**: Click the sound button in the control panel
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7c953700-a863-443c-806a-60c492b2ead5) and start prompting.
+## 🎯 Game Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- Classic Space Invaders gameplay with three invader types
+- Progressive difficulty - each wave moves faster
+- Destructible shields for protection
+- Bonus UFO for extra points
+- Retro arcade sound effects using Web Audio API
+- Pixel art graphics rendered on HTML5 Canvas
+- Lives system and high score tracking
 
-**Use your preferred IDE**
+## 🚀 Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v16 or higher)
+- npm or yarn
 
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd space-invaders
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The game will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```sh
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🛠️ Development
 
-## What technologies are used for this project?
+### Project Structure
 
-This project is built with:
+```
+src/
+├── lib/
+│   ├── game.ts       # Main game loop and logic
+│   ├── entities.ts   # Player, Invaders, Bullets, Shields, UFO
+│   └── audio.ts      # Sound effects manager
+├── pages/
+│   └── Index.tsx     # Main game component
+└── index.css         # Design system and styles
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Editing the Code
 
-## How can I deploy this project?
+**Using Lovable:**
+- Visit the [Lovable Project](https://lovable.dev/projects/7c953700-a863-443c-806a-60c492b2ead5)
+- Changes sync automatically to GitHub
 
-Simply open [Lovable](https://lovable.dev/projects/7c953700-a863-443c-806a-60c492b2ead5) and click on Share -> Publish.
+**Using Your IDE:**
+- Clone the repo and make changes locally
+- Push to GitHub - changes sync to Lovable
+- Full two-way sync between Lovable and GitHub
 
-## Can I connect a custom domain to my Lovable project?
+## 🎨 Technologies
 
-Yes, you can!
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Styling
+- **HTML5 Canvas** - Game rendering
+- **Web Audio API** - Sound effects
+- **Lucide React** - Icons
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📦 Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Deploy with Lovable
+
+1. Open [Lovable](https://lovable.dev/projects/7c953700-a863-443c-806a-60c492b2ead5)
+2. Click Share → Publish
+3. Your game will be live instantly
+
+### Deploy Anywhere
+
+The built files can be deployed to any static hosting service:
+- Vercel
+- Netlify
+- GitHub Pages
+- Cloudflare Pages
+
+```sh
+npm run build
+# Deploy the 'dist' folder to your hosting service
+```
+
+## 🔗 Connect to GitHub
+
+Click the GitHub button in Lovable to automatically create a repository with your code. Lovable features two-way sync - changes in Lovable push to GitHub, and changes in GitHub sync to Lovable.
+
+## 📝 License
+
+Built with [Lovable](https://lovable.dev) - the AI-powered full-stack development platform.
+
+## 🎮 Credits
+
+Original Space Invaders © Taito Corporation 1978. This is a fan tribute built for educational purposes.
